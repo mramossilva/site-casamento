@@ -1,0 +1,27 @@
+<div #navbar></div>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-brown">
+  <li class="navbar-brand">
+      <a class="navbar-brand" routerLink="/">
+        <img src="../../assets/letras_sem_fundo.png" width="30" height="30" alt="">
+      </a>
+</li>
+  <button class="navbar-toggler" type="button"  data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()" >
+    <span class="navbar-toggler-icon"></span>
+    
+  </button>
+
+  <div [ngClass]="{ 'show': navbarOpen }" class="collapse navbar-collapse" id="navbarSupportedContent" >
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a  class="nav-link" routerLink="/home" >Menu Principal<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a   class="nav-link" routerLink="/nosso-dia" >Sobre o nosso dia<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active ">
+        <a   class="nav-link" routerLink="/presentes" >Lista de presentes<span class="sr-only">(current)</span></a>
+      </li>   
+    </ul>
+  </div>
+</nav>

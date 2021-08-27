@@ -1,0 +1,97 @@
+.telaInicial{
+    height: 100vh;  
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+.textoCentral{
+  align-content: center;
+  justify-content: center;
+  display: flex;  
+}
+
+.textoCentral2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);  
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.botaoDemaisPaginas{
+    position: absolute;    
+    bottom: 5%;    
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 9px;
+  }
+
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+  .espacamento{
+    padding-top: 60px;
+  }
+
+.menuTelaInicial{
+  height: 100vh;  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+
+.menuInicial{
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  top: 10%;  
+}
+
+.menuTitulo{
+  font-family: 'Dancing Script', cursive;  
+}
+
+.menuItem{
+   cursor: pointer; 
+   background-color: Transparent;
+   border: transparent;
+}
+
+.menuItem :hover{
+  color: white;
+  background-color: black;
+}
+
+.menuTitulo{
+    font-family: 'Dancing Script', cursive;
+    font-size: 700%;    
+}
+
+
+
+
+
+
+
+
+
+  

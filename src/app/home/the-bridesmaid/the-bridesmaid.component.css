@@ -1,0 +1,10 @@
+img {
+    float: center;
+    width:  900px;
+    height: 600px;
+    object-fit: cover;
+}
+
+h1{
+    font-family: 'Dancing Script', cursive;
+}

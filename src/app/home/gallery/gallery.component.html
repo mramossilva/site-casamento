@@ -1,0 +1,32 @@
+<div class="container align-content-center">
+  <div class="row">
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-8">
+      <h1 class="text-center">Nossos Momentos</h1>
+      
+        <ngb-carousel #carousel [interval]="2000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus"
+          (slide)="onSlide($event)" class="align-itens-center">
+          <ng-template ngbSlide *ngFor="let photo of photos">
+            <div class="carousel-caption">
+              <!--<h3>{{photo.desc}}</h3>-->
+            </div>
+
+            <div class="picsum-img-wrapper">
+              <img [src]="photo.url" class="figure-img img-fluid rounded" alt="">
+            </div>
+
+          </ng-template>
+        </ngb-carousel>
+      
+    </div>
+    <div class="col-md-2">
+    </div>
+  </div>
+</div>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+<hr>

@@ -1,0 +1,31 @@
+<h1 class="text-center">A dama de honra</h1>
+<div class="container">
+    <div class="row">
+        <div class="col text-justify">
+            <p>Alguns dias depois, num domingo de manhã um enjoo diferente, que foi perdurando, e não passava. Será algo
+                que não lhe fez bem? Gastrite? Que nada! Era a maior surpresa da vida deles, o maior presente avisando
+                que estava chegando, a coisinha mais linda com o sorriso mais sincero que já existiu: Melissa.
+            </p>
+            <p>A euforia, o medo do novo, do inesperado, até mesmo um certo desespero tomou conta daqueles primeiros
+                instantes, mas logo se foi e o que ficou foi só a felicidade de estarem construindo o que sempre
+                sonharam, desde o primeiro instante que se viram, de uma forma tão intensa e verdadeira como sempre foi,
+                e sempre será.
+            </p>
+            <p> A Melissa chegou junto com a Pandemia e todos os dias passou a nos ensinar coisas novas sobre nós, sobre
+                ela, sobre os seres humanos, sobre o que é ser um casal, sobre mais de um ano juntos 24 horas por dia,
+                paciência, perseverança, e reafirmando nosso amor um pelo o outro e a vontade de ficarmos juntos para
+                sempre.
+            </p>
+            <p>Essa história está só no começo e o nosso casamento é mais um capitulo dela, esperamos que todos vocês
+                sintam a nossa alegria nesse dia e compartilhem dela.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-4" *ngFor="let photo of photos">
+            <img class="mx-auto img-thumbnail d-block" [src]="photo.url">
+            <p class="text-center">{{photo.desc}}</p>
+        </div>
+    </div>
+</div>
+<hr>

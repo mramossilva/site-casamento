@@ -1,0 +1,65 @@
+<div class="bg-image  telaInicial" [style]="bgStyle">
+
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-center">Liciara & Mateus</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <countdown class="text-center" [text]="text" units="Days | Hours | Minutes | Seconds" end="October 31, 2021" divider="|" showZero="true"></countdown>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row botaoDemaisPaginas">
+            <div class="col-12">
+                <button (click)="scrollTo(mainMenu)" class="arrow down"></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-navbar></app-navbar>
+
+<div #mainMenu></div>
+<div class="menuTelaInicial" [style]="bgMenu">
+    <div class="menuInicial">
+        <h1 class="menuTitulo">Menu</h1>
+        <div class="btn-group-vertical">
+            <a (click)="scrollTo(ourHistory)" class="menuItem list-group-item list-group-item-action"><h2><b>Nossa História</b></h2></a>
+            <a (click)="scrollTo(theAsk)" class="menuItem list-group-item list-group-item-action"><h2><b>O pedido</b></h2></a>
+            <a (click)="scrollTo(ourmomments)" class="menuItem list-group-item list-group-item-action"><h2><b>Nossos Momentos</b></h2></a>
+            <a (click)="scrollTo(thebridesmaid)" class="menuItem list-group-item list-group-item-action"><h2><b>A dama de honra</b></h2></a>
+            <a (click)="scrollTo(groomsmenwedding)" class="menuItem list-group-item list-group-item-action"><h2><b>Padrinhos</b></h2></a>   
+        </div>       
+    </div>    
+</div>
+
+<div #ourHistory class="espacamento"></div>
+<app-our-history></app-our-history>
+
+<div #theAsk class="espacamento"></div>
+<app-the-ask></app-the-ask>
+
+<div #ourmomments class="espacamento"></div>
+<app-gallery></app-gallery>
+
+<div #thebridesmaid class="espacamento"></div>
+<app-the-bridesmaid></app-the-bridesmaid>
+
+<div #groomsmenwedding class="espacamento"></div>
+<app-groomsmen-wedding></app-groomsmen-wedding>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+
